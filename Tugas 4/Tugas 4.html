@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Minggu ke 4</title>
+    
+    <!-- CSS -->
+    <style>
+        
+    .tabel_pengalaman_kerja{
+        text-align : center; }
+    
+    .biru {
+        color: rgb(123, 123, 232);}
+
+    .header {
+        background: rgb(98, 220, 236);
+        color : rgb(255, 255, 255);
+        text-align: center;
+        display: flex;
+        height: 30vh;
+        width: 100%;
+    }
+    
+    nav{
+        background-color:rgb(123, 123, 232);
+        display: flex;
+        padding-left: 50%;
+        align-items: center;
+
+    }
+    nav ul li {
+        list-style-type: none;
+        display: inline-block;
+        padding: 10px 25px;
+    }
+    nav ul li a {
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        font-weight: bold;
+        text-transform: uppercase;
+        
+    }
+    .pilihan_judul{
+        background-color: rgb(123, 123, 232);
+        padding: 15px;
+        color: white;
+        margin: 20px 20px 20px 0px;
+        margin-left: 20px;
+        width: fit-content;
+        font-weight: bold;
+    }
+    .text_tentang_saya{
+        background-color: #f6f6f6;
+        height: fit-content;
+        width: 50%;
+        text-align: justify;
+        padding: 20px;
+        border-radius: 10px;
+    }
+    .displayflex_video_tentang_saya{
+        display: flex;
+        padding: 40px;
+        justify-content: space-between;
+    }
+
+    .tabel_pengalaman_kerja {
+        border-collapse: collapse;
+        width: 60%;
+        margin: auto;
+    }
+    .tabel_pengalaman_kerja th {
+        background-color: rgb(98, 220, 236);
+        color: white;
+        border: 1.5px solid #ddd;
+        padding: 10px;
+    }
+    .tabel_pengalaman_kerja td {
+        background-color: #f6f6f6;
+        border: 1.5px solid #ddd;
+        padding: 10px;
+    }
+
+    .Hubungi_saya {
+        background-color: rgb(98, 220, 236);
+        width: fit-content;
+        padding: 30px;
+        border-radius: 40px;
+        margin-left: 20%;
+    }
+    .footer {
+        text-align: center;
+        background-color: #f6f6f6;
+        color: rgb(123, 123, 232);
+        padding: 2px;
+    }
+    #mode {
+        width: 50px;
+        height: 20;
+        position: absolute;
+        left: 0;
+        margin-left: 20px;
+    }
+    .body{
+        background-color: var(--brighness );
+    }
+    :root{
+        --darkmode  : #000;
+        --brighness : #fff;
+    }
+    .dark{
+        --darkmode  : #fff;
+        --brighness : #000;
+    }
+    @media (max-width : 1000px){
+    nav{
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color:red;
+    }
+    nav ul li {
+        list-style-type: none;
+        display: inline-block;
+        padding: 10px 25px;
+    }
+    nav ul li a {
+        color: rgb(255, 255, 255);
+        font-size: 2vmin;
+        text-decoration: none;
+        font-weight: bold;
+        text-transform: uppercase;
+        
+    }
+    .pilihan_judul{
+        background-color: rgb(123, 123, 232);
+        padding: 15px;
+        color: black;
+        margin: 20px 20px 20px 0px;
+        margin-left: 20px;
+        width: fit-content;
+        font-weight: bold;
+    }
+    .text_tentang_saya{
+        background-color: green;
+        height: fit-content;
+        width: 50%;
+        text-align: justify;
+        padding: 20px;
+        border-radius: 10px;
+    }
+    .displayflex_video_tentang_saya{
+        display: flex;
+        padding: 40px;
+        justify-content: space-between;
+    }
+    }
+    </style>
+</head>
+<body class='body'>
+    <div class="header">
+        <img src="Gambar Tugas 2.jpg" 
+        alt="Ada Yang salah" 
+        width="100px" height="100py">
+            <div>
+            <h1>Hai, saya <span class="biru">Ahmad Fadillah</span></h1>
+            <p style="font-size: 150%;">Mahasiswa Teknik Informatika</p>
+            </div>
+    </div>
+    <aside>
+        <nav>
+            <ul>
+                <li><a href="#tentang"> Tentang Saya</a></li>
+                <li><a href="#kerja">Pengalaman Kerja</a></li>
+                <li><a href="#Hubungi Saya">Hubungi Saya</a></li>
+            </ul>
+            <img id='mode' src="dark-mode.png" alt="">
+        </nav>
+    </aside>
+
+    <main > 
+        <section id = "tentang">
+            <h2 class="pilihan_judul" ># Tentang Saya</h2>
+            <div class="displayflex_video_tentang_saya">
+                <div class="text_tentang_saya">
+                    <p>Saya adalah seorang mahasiswa yang suka mencari hal baru seperti mengujicoba dll.
+                        Saya juga seorang yang ingin menjadi Data Scientist ataupun seorang Data Engineer karena 
+                        berdasarkan lowongan kerja lebih luas dan gajih yang tinggi. Untuk hal itu saya memfokuskan
+         
+                     </p>
+                </div>
+                <div> <figure>
+                    <iframe width="800" height="600" 
+                    src="https://www.youtube.com/embed/0Vd1Pt6Mx7k" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                    </iframe>
+                </figure>
+                </div>
+            </div>
+        </section>
+
+        <section id="kerja">
+            <h2 class="pilihan_judul">Pengalaman Kerja</h2>
+            <table border="1" class="tabel_pengalaman_kerja">
+                <thead>
+                    <tr>
+                        <th rowspan= "2">No</th>
+                        <th rowspan= "2">Posisi</th>
+                        <th rowspan= "2">Perusahaan</th>
+                        <th colspan= "2">Waktu</th>                        
+                    </tr>
+                    <tr>
+                        <th>Mulai</th>
+                        <th>Akhir</th>
+                    </tr>
+                </thead>
+                <tbody class="tabel_pengalaman_kerja">
+                    <tr>
+                        <td >1</td>
+                        <td>Junior Data Scientist</td>
+                        <td >Amazon</td>
+                        <td >2023</td>
+                        <td >-</td>
+                    </tr>
+                    <tr>
+                        <td >2</td>
+                        <td>Junior Data Engineer</td>
+                        <td >Aliexpress</td>
+                        <td >2023</td>
+                        <td >-</td>
+                    </tr>
+                    <tr>
+                        <td >3</td>
+                        <td>Junior Data Analyst</td>
+                        <td >Alibaba</td>
+                        <td >2023</td>
+                        <td >-</td>
+                    </tr>
+                    <tr>
+                        <td >4</td>
+                        <td>Senior Data Scientist</td>
+                        <td >Amazon</td>
+                        <td >2024</td>
+                        <td >-</td>
+                    </tr>
+                    <tr>
+                        <td >5</td>
+                        <td>Senior Data Engineer</td>
+                        <td >Aliexpress</td>
+                        <td >2024</td>
+                        <td >-</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="Hubungi Saya">
+            <h2 class="pilihan_judul">Hubungi Saya</h2>
+            <div class="Hubungi_saya">
+                <form action="#" method="get">
+                    <div>
+                        <label for="nama">nama:</label>
+                        <input type="text" name="nama" id="nama">
+                    </div>
+                    <div>
+                        <p>sudah nonton film saya?</p>
+                        <input type="radio" name="status" id="sudah">
+                        <label for="sudah">sudah</label>
+                        <br>
+                        <input type="radio" name="status" id="belum">
+                        <label for="belum">belum</label>
+                    </div>
+                    <br>
+                    <div>
+                        <p>Akun Media Social yang sudah di follow</p>
+                        <input type="checkbox" name="instagram" id="instagram">
+                        <label for="instagram">instagram</label>
+                        
+                        <input type="checkbox" name="Linkedin" id="Linkedin">
+                        <label for="Linkedin">Linkedin</label>
+                        <br>
+                        <input type="checkbox" name="Facebook" id="Facebook">
+                        <label for="Facebook">Facebook</label>
+                        <input type="checkbox" name="Twitter" id="Twitter">
+                        <label for="Twitter">Twitter</label>
+                        <br>
+                        <input type="submit" name="submit" id="submit">
+                    </div>
+                    <di</dir>
+                </form>
+            </div>
+        </section>
+    </main>
+    <br><br><br>
+    <footer class="footer">
+        <h3>INI FOOTER</h3>
+        
+    </footer>
+</body>
+<script>
+let icon = document.getElementById('mode')
+icon.onclick = 
+function () {
+    document.body.classList.toggle("dark");
+    if (document.body.classList.contains('dark')){
+        icon.src = 'dark-mode.png';}
+    else{
+        icon.src = 'brightness.png';}
+}
+</script>
+</html>
